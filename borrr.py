@@ -215,7 +215,7 @@ def handle_schedule_choice(message):
     if not os.path.exists(path):
         bot.send_message(message.chat.id,
             "❗ У класса нет расписания.\nНапиши его прямо сюда по примеру:\n\n"
-            "# Понедельник\n1. Математика\n2. Русский\n\n# Вторник\n1. История"
+            "# Понедельник\n0. Классный час\n2. Русский\n\n# Вторник\n1. История"
         )
         user_states[uid] = "write_schedule"
         return
